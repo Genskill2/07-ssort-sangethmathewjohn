@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void swap_max(int arr[], int l, int n)
+void swap_max(int a[], int l, int n)
 {
     int max = a[n];
     int pos = -1;
@@ -20,11 +20,11 @@ void swap_max(int arr[], int l, int n)
     return 0;
 }
 
-void ssort(int arr[], int l)
+void ssort(int a[], int l)
 {
     for (int i = 0; i < l; i++)
     {
-        swap_max(arr, l, i);
+        swap_max(a, l, i);
     }
     return 0;
 }
